@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
+
+</head>
+<body>
+    <div id="ec7c357234c941148af32bfffd3c4d7d" style="width:1600px; height:1000px;"></div>
+    <script>
+		var canvas_ec7c357234c941148af32bfffd3c4d7d = document.createElement('canvas');
+        var mapChart_ec7c357234c941148af32bfffd3c4d7d = echarts.init(
+		     canvas_ec7c357234c941148af32bfffd3c4d7d, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
+        var mapOption_ec7c357234c941148af32bfffd3c4d7d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "high_speedrail operation",
+            "label": {
+                "show": true,
+                "position": "bottom",
+                "color": "#000",
+                "margin": 8
+            },
+            "map": "world",
+            "data": [
+                {
+                    "name": "China",
+                    "value": 22000
+                },
+                {
+                    "name": "Japan",
+                    "value": 2900
+                },
+                {
+                    "name": "France",
+                    "value": 2100
+                },
+                {
+                    "name": "Germany",
+                    "value": 1500
+                },
+                {
+                    "name": "Spain",
+                    "value": 2900
+                },
+                {
+                    "name": "Italy",
+                    "value": 900
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "zlevel": 0,
+            "z": 2,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": false,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "high_speedrail operation"
+            ],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        mapChart_ec7c357234c941148af32bfffd3c4d7d.setOption(mapOption_ec7c357234c941148af32bfffd3c4d7d);
+
+		var chart_ec7c357234c941148af32bfffd3c4d7d = echarts.init(
+        document.getElementById('ec7c357234c941148af32bfffd3c4d7d'), 'white', {renderer: 'canvas'});
+		var options_ec7c357234c941148af32bfffd3c4d7d = {
+           "globe": {
+           "show": true,
+		   "baseTexture": mapChart_ec7c357234c941148af32bfffd3c4d7d,
+           shading: 'lambert',
+            light: {
+                ambient: {
+                    intensity: 0.6
+                },
+                main: {
+                    intensity: 0.2
+                }
+             }
+
+		   }};
+		chart_ec7c357234c941148af32bfffd3c4d7d.setOption(options_ec7c357234c941148af32bfffd3c4d7d);
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+Dataset Description: E-commerce Customer Behavior
+
+Overview:
+该数据集提供了电子商务平台内客户行为的全面视图。数据集中的每个条目都对应一个独特的客户，提供了客户互动和交易的详细分类。这些信息有助于对客户偏好、参与模式和满意度进行细致入微的分析，帮助企业做出数据驱动型决策，提升客户体验。
+
+Columns:
+
+Customer ID:
+
+Type: Numeric
+Description: 为每个客户分配一个唯一的标识符，确保数据集之间的区别。
+Gender:
+
+Type: Categorical (Male, Female)
+Description: 指定客户的性别，以便进行基于性别的分析。
+Age:
+
+Type: Numeric
+Description: 代表客户的年龄，以便深入了解特定年龄组的情况。
+City:
+
+Type: Categorical (City names)
+Description: 显示每位客户的居住城市，提供地理信息。
+Membership Type:
+
+Type: Categorical (Gold, Silver, Bronze)
+Description: 确定客户所持会员资格的类型，并影响其津贴和福利。
+Total Spend:
+
+Type: Numeric
+Description: 记录客户在电子商务平台上的总货币支出。
+Items Purchased:
+
+Type: Numeric
+Description: 量化客户购买的商品总数。
+Average Rating:
+
+Type: Numeric (0 to 5, with decimals)
+Description: 代表顾客对所购商品的平均评分，用以衡量满意度。
+Discount Applied:
+
+Type: Boolean (True, False)
+Description: 表示顾客购买时是否享受了折扣，从而影响购买行为。
+Days Since Last Purchase:
+
+Type: Numeric
+Description: 反映客户最近一次购买后的天数，有助于分析客户保留率。
+Satisfaction Level:
+
+Type: Categorical (Satisfied, Neutral, Unsatisfied)
+Description: 捕捉客户的总体满意度，提供客户体验的主观衡量标准。
+
+------------------------------------------------------------------------
+使用案例：
+
+客户细分：
+
+根据人口统计学、消费习惯和满意度对客户进行分析和分类。
+满意度分析：
+
+调查影响客户满意度的因素，确定需要改进的地方。
+促销策略：
+
+评估折扣对顾客消费的影响，并制定相应的促销策略。
+留住顾客策略：
+
+通过了解自上次购买以来的时间差，制定有针对性的留住顾客策略。
+基于城市的洞察：
+
+探索客户行为的地区差异，根据特定地区的趋势优化营销工作。
+注：本数据集是出于说明目的而合成的，与真实个人或场景的任何相似之处均属巧合。
+
+
